@@ -4,7 +4,14 @@ body {
   font-style: normal;
   font-feature-settings: "palt" 1;
   color: #1e1b19;
-  background-color: #ece4d1;
+  background: url(/src/assets/bg-all.png) top center;
+  background-size: cover;
+}
+
+.all {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 a {
@@ -21,6 +28,10 @@ a {
   font-family: "Libre Franklin", sans-serif;
 }
 
+.font-EBGaramond {
+  font-family: "EB Garamond", serif;
+}
+
 .global-header {
   display: flex-inline;
   wrap: nowrap;
@@ -29,6 +40,7 @@ a {
   text-align: center;
   width: 100%;
   border-top: 4px solid #000;
+  margin-bottom: 40px;
 
   &::before {
     display: block;
@@ -70,7 +82,7 @@ a {
       border-top: 1px solid #000;
       list-style-type: none;
       margin: 0;
-      padding: 16px;
+      padding-block: 16px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -138,6 +150,152 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.container-about {
+  display: flex;
+  justify-content: space-between;
+
+  .details {
+    h2 {
+      font-size: 84px;
+      margin-bottom: 64px;
+    }
+
+    p {
+      font-size: 14px;
+
+      &.copy {
+        &::before {
+          content: "“";
+        }
+        &::after {
+          content: "”";
+        }
+      }
+
+      &.name {
+        &::before {
+          content: "–";
+          padding-right: 4px;
+        }
+      }
+    }
+
+    .detail {
+      line-height: 2;
+    }
+
+    .link {
+      text-align: right;
+
+      a {
+        display: inline-block;
+        position: relative;
+        padding-left: 48px;
+        font-size: 14px;
+        text-decoration: none;
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: #000;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 1px;
+          background-color: #000;
+          position: absolute;
+          left: 0;
+          top: 13px;
+        }
+      }
+    }
+  }
+
+  .collection {
+    h3 {
+      font-size: 48px;
+      margin-bottom: 60px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      p {
+        font-size: 10px;
+        line-height: 1.6;
+      }
+    }
+
+    li {
+      .img {
+        position: relative;
+        overflow: hidden;
+        transition-duration: 4s;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          animation: slideMask 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+        }
+
+        @keyframes slideMask {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(100%); /* 右方向にスライドして消える */
+          }
+        }
+      }
+    }
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color: #000;
+      }
+      &:link {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.container-masterpiece {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    h2 {
+      font-size: 84px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
     }
   }
 }
