@@ -299,3 +299,35 @@ a {
     }
   }
 }
+
+.grid {
+  width: 920px;
+}
+
+.grid-item {
+  width: 100%; /* スマホ：1列 */
+  padding: 0; /* 余白 */
+  box-sizing: border-box;
+
+  .grid-sizer {
+    width: 30%;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-item {
+    width: 50%;
+  } /* タブレット：2列 */
+}
+
+@media (min-width: 900px) {
+  .grid-item {
+    width: 33.333%;
+  } /* PC：3列 */
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
