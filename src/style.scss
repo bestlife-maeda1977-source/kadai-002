@@ -1,3 +1,8 @@
+html,
+body {
+  width: 100% !important;
+}
+
 body {
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
@@ -55,6 +60,10 @@ a {
     margin: 54px;
     padding: 0;
 
+    @media (min-width: 541px) {
+      margin: 27px auto;
+    }
+
     img {
       display: block;
       margin: 0 auto;
@@ -82,17 +91,45 @@ a {
       border-top: 1px solid #000;
       list-style-type: none;
       margin: 0;
-      padding-block: 16px;
+      padding: 16px 0;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (min-width: 541px) {
+        flex-wrap: wrap;
+      }
     }
 
     li {
       position: relative;
+      width: 50%;
+
+      @media (min-width: 541px) {
+      }
+
+      @media (min-width: 880px) {
+        position: static;
+        width: auto;
+      }
 
       &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
         content: "|";
+
+        @media (min-width: 880px) {
+          position: static;
+        }
+      }
+
+      &:nth-of-type(2n + 1)::before {
+        content: none;
+
+        @media (min-width: 880px) {
+          content: "|";
+        }
       }
 
       &:first-child {
@@ -108,6 +145,7 @@ a {
       }
 
       a {
+        display: block;
         padding-inline: 12px;
 
         &:link,
@@ -125,10 +163,15 @@ a {
         }
       }
 
-      .language {
+      &.language {
         display: flex;
         margin-left: 12px;
         border-top: none;
+        display: none;
+
+        @media (min-width: 880px) {
+          display: block;
+        }
 
         li {
           position: relative;
@@ -282,15 +325,26 @@ a {
 }
 
 .container-masterpiece {
+  width: 100%;
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    @media (min-width: 1400px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+    }
 
     h2 {
-      font-size: 84px;
+      font-size: 48px;
       font-weight: 700;
+
+      @media (min-width: 541px) {
+        font-size: 64px;
+      }
+
+      @media (min-width: 880px) {
+        font-size: 84px;
+      }
     }
 
     p {
@@ -298,36 +352,69 @@ a {
       line-height: 1.5;
     }
   }
-}
 
-.grid {
-  width: 920px;
-}
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 0;
+    width: 100% !important;
 
-.grid-item {
-  width: 100%; /* スマホ：1列 */
-  padding: 0; /* 余白 */
-  box-sizing: border-box;
+    @media (min-width: 541px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-  .grid-sizer {
-    width: 30%;
+    @media (min-width: 880px) {
+      grid-template-columns: repeat(1, 34.6% 2fr);
+    }
   }
-}
 
-@media (min-width: 600px) {
+  .grid-column-separate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 0;
+
+    @media (min-width: 541px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (min-width: 880px) {
+      grid-template-columns: repeat(1, 53.4% 1fr);
+    }
+  }
+
   .grid-item {
-    width: 50%;
-  } /* タブレット：2列 */
-}
+    display: block;
+    break-inside: avoid;
+    margin-bottom: 10px;
 
-@media (min-width: 900px) {
-  .grid-item {
-    width: 33.333%;
-  } /* PC：3列 */
-}
+    @media (min-width: 541px) {
+    }
 
-.grid-item img {
-  display: block;
-  width: 100%;
-  height: auto;
+    @media (min-width: 880px) {
+      &.grid-item-4,
+      &.grid-item-5 {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .grid-item.grid-item-7 {
+    grid-column: 1 / -1;
+    grid-row: 0;
+
+    @media (min-width: 541px) {
+    }
+
+    @media (min-width: 880px) {
+      grid-column: 1 / -1;
+    }
+  }
 }
