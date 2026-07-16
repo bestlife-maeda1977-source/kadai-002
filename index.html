@@ -9,58 +9,65 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANATOMICA｜アナトミカ公式サイト</title>
   </head>
   <body>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- imagesLoaded -->
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script type="module" src="/src/main.js"></script>
     <div class="all">
-      <header class="global-header container-fluid gx-0">
-        <h1 class="ci container-fluid">
-          <img
-            src="/src/assets/ci.png"
-            width="260"
-            height="41"
-            loading="lazy"
-            alt="ANATOMICA"
-            class="img-fluid"
-          />
-          <span
-            >Clothing and shoes that fit a wide variety of human bodies</span
-          >
-        </h1>
-        <nav class="container-fluid gx-0">
-          <ul class="font-sans">
-            <li><a href="about">ABOUT</a></li>
-            <li><a href="#collection">COLLECTION</a></li>
-            <li><a href="masterpiece">MASTERPIECE</a></li>
-            <li><a href="stockist">STOCKIST</a></li>
-            <li>
-              <a href="https://store.anatomica.jp/" target="_blank"
-                >ONLINE STORE</a
+      <header class="global-header container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1 class="ci container-fluid">
+              <img
+                src="/src/assets/ci.png"
+                width="260"
+                height="41"
+                loading="lazy"
+                alt="ANATOMICA"
+                class="img-fluid"
+              />
+              <span
+                >Clothing and shoes that fit a wide variety of human
+                bodies</span
               >
-            </li>
-            <li>
-              <a href="https://store.anatomica.jp/pages/contact" target="_blank"
-                >CONTACT</a
-              >
-            </li>
-            <li class="language">
-              <ul>
-                <li>JP</li>
-                <li>EN</li>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <nav class="container-fluid gx-0">
+              <ul class="font-sans">
+                <li><a href="about">ABOUT</a></li>
+                <li><a href="#collection">COLLECTION</a></li>
+                <li><a href="masterpiece">MASTERPIECE</a></li>
+                <li><a href="stockist">STOCKIST</a></li>
+                <li>
+                  <a
+                    class="blank"
+                    href="https://store.anatomica.jp/"
+                    target="_blank"
+                    >ONLINE STORE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="blank"
+                    href="https://store.anatomica.jp/pages/contact"
+                    target="_blank"
+                    >CONTACT</a
+                  >
+                </li>
+                <li class="language">
+                  <ul>
+                    <li data-language="is-active">JP</li>
+                    <li>EN</li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </nav>
+            </nav>
+          </div>
+        </div>
       </header>
 
       <main>
@@ -68,13 +75,30 @@
           <div class="row">
             <div class="col col-4 details">
               <h2 class="font-EBGaramond">ABOUT</h2>
-              <p class="copy">伝統で無いものは、すべて盗作である</p>
-              <p class="name">ユージェニオ・ドール</p>
+              <p class="copy font-sans">伝統で無いものは、すべて盗作である</p>
+              <p class="name font-sans text-end">ユージェニオ・ドール</p>
               <p class="detail font-sans">
                 ピエール・フルニエが1994年にフランス・パリでANATOMICAをオープンしたのは、当時メンズシーンから失われていた、または失われつつあった伝統的なヨーロッパのファッションを蘇らせるためだった。歴史と伝統、そして自身によるフィット感に拘った「アナトミカル（解剖学的）」なコレクションを展開。その後、2006年の寺本欣児との出会いによってANATOMICAに新たな方向性が加わる。2人のフィルターを通した、日本のものづくりによるアメリカンテイスト・ガーメントの誕生となる。
               </p>
               <div class="link">
                 <a href="./" class="font-sans">VIEW MORE</a>
+              </div>
+              <div class="img">
+                <picture>
+                  <source
+                    srcset="/src/assets/bg-001.png"
+                    media="(max-width: 880px)"
+                  />
+                  <img
+                    src="/src/assets/bg-001.png"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    alt=""
+                    width="372"
+                    height="210"
+                  />
+                </picture>
               </div>
             </div>
             <div class="col col-8 collection">

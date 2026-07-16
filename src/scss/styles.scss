@@ -1,0 +1,42 @@
+@import "custom";
+@import "bootstrap/scss/bootstrap";
+@import "./components/header";
+@import "./components/home";
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-feature-settings: "palt" 1;
+  color: #1e1b19;
+  background: url(/src/assets/bg-all.png) top center;
+  background-size: cover;
+}
+
+.all {
+  width: 100%;
+  padding-block: 30px;
+  box-sizing: border-box;
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px;
+  }
+}
+
+a {
+  &:hover {
+    color: #b51b03;
+  }
+}
+
+.font-sans {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.font-franklin {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.font-EBGaramond {
+  font-family: "EB Garamond", serif;
+}

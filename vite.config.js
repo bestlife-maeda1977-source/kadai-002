@@ -17,6 +17,7 @@ export default defineConfig({
           "import",
           "global-builtin",
           "slash-div",
+          "if-function",
         ],
       },
     },
