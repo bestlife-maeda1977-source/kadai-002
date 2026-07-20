@@ -253,7 +253,7 @@
 
   .grid-column-separate {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 10px;
     row-gap: 0;
 
@@ -301,40 +301,46 @@
   }
 
   .grid-item {
-    background-size: cover;
+    background-size: cover !important;
+
+    &.grid-item-5 {
+      @include media-breakpoint-up(xl) {
+        order: 1;
+      }
+    }
 
     &:hover {
+      &.grid-item-1 {
+        background: url(/src/assets/mp-001-ov.png) center center no-repeat;
+      }
+
+      &.grid-item-2 {
+        background: url(/src/assets/mp-002-ov.png) center center no-repeat;
+      }
+
+      &.grid-item-3 {
+        background: url(/src/assets/mp-003-ov.png) center center no-repeat;
+      }
+
+      &.grid-item-4 {
+        background: url(/src/assets/mp-004-ov.png) center center no-repeat;
+      }
+
+      &.grid-item-5 {
+        background: url(/src/assets/mp-005-ov.png) center center no-repeat;
+      }
+
+      &.grid-item-6 {
+        background: url(/src/assets/mp-006-ov.png) center center no-repeat;
+      }
+
+      &.grid-item-7 {
+        background: url(/src/assets/mp-007-ov.png) center center no-repeat;
+      }
+
       img {
         opacity: 0;
       }
     }
-  }
-
-  .grid-item-1 {
-    background: url(/src/assets/mp-001-ov.png) center center no-repeat;
-  }
-
-  .grid-item-2 {
-    background: url(/src/assets/mp-002-ov.png) center center no-repeat;
-  }
-
-  .grid-item-3 {
-    background: url(/src/assets/mp-003-ov.png) center center no-repeat;
-  }
-
-  .grid-item-4 {
-    background: url(/src/assets/mp-004-ov.png) center center no-repeat;
-  }
-
-  .grid-item-5 {
-    background: url(/src/assets/mp-005-ov.png) center center no-repeat;
-  }
-
-  .grid-item-6 {
-    background: url(/src/assets/mp-006-ov.png) center center no-repeat;
-  }
-
-  .grid-item-7 {
-    background: url(/src/assets/mp-007-ov.png) center center no-repeat;
   }
 }
