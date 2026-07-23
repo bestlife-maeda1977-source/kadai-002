@@ -123,6 +123,10 @@
       letter-spacing: -0.05em;
       margin-bottom: 50px;
 
+      @include media-breakpoint-up(sm) {
+        font-size: 48px;
+      }
+
       @include media-breakpoint-up(lg) {
         font-size: 36px;
       }
@@ -217,6 +221,10 @@
       font-size: 48px;
       line-height: 1;
       font-weight: 700;
+
+      @include media-breakpoint-up(sm) {
+        letter-spacing: -0.08em;
+      }
 
       @include media-breakpoint-up(md) {
         font-size: 64px;
