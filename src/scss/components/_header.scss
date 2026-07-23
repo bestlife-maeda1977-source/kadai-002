@@ -125,7 +125,7 @@
         }
       }
 
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(xs) {
         &:nth-of-type(4)::before {
           display: none;
         }
@@ -156,7 +156,7 @@
         padding: 18px 0;
         color: #1e1b19;
         font-family: "Libre Franklin";
-        font-size: 14px;
+        font-size: 11px;
         font-style: normal;
         font-weight: 500;
         line-height: 1;

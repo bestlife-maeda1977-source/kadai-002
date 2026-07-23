@@ -118,14 +118,10 @@
     }
 
     h3 {
-      font-size: 64px;
+      font-size: 48px;
       line-height: 1;
       letter-spacing: -0.05em;
       margin-bottom: 50px;
-
-      @include media-breakpoint-up(sm) {
-        font-size: 48px;
-      }
 
       @include media-breakpoint-up(lg) {
         font-size: 36px;
@@ -218,11 +214,12 @@
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 38px;
       line-height: 1;
       font-weight: 700;
 
       @include media-breakpoint-up(sm) {
+        font-size: 48px;
         letter-spacing: -0.08em;
       }
 
