@@ -95,6 +95,7 @@
       @include media-breakpoint-up(lg) {
         flex-wrap: nowrap;
         padding: 11px 0;
+        border-bottom: 1px solid $black;
       }
     }
 
@@ -104,6 +105,10 @@
       width: 33.3%;
       position: relative;
       border-bottom: 1px solid #000;
+
+      @include media-breakpoint-up(lg) {
+        border-bottom: none;
+      }
 
       &::before {
         position: absolute;
@@ -123,6 +128,12 @@
       @include media-breakpoint-up(sm) {
         &:nth-of-type(4)::before {
           display: none;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        &:nth-of-type(4)::before {
+          display: block;
         }
       }
 
@@ -188,6 +199,10 @@
         margin-left: 10px;
         border-block: none;
 
+        ul {
+          border-bottom: none;
+        }
+
         li {
           position: relative;
           color: #1e1b19;
@@ -199,6 +214,8 @@
           letter-spacing: 2.4px;
           border-bottom: none;
           border-right: 1px solid #000;
+          width: auto;
+          padding-inline: 14px;
 
           &:last-child {
             border-right: none;
