@@ -8,6 +8,9 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-feature-settings: "palt" 1;
+  text-align: justify;
+  text-autospace: ideograph-numeric;
+  word-break: break-all;
   color: #1e1b19;
   background: url(/src/assets/bg-all.png) top center;
   background-size: cover;
@@ -20,6 +23,10 @@ body {
 
   @include media-breakpoint-up(sm) {
     padding: 20px 20px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 32px;
   }
 
   @include media-breakpoint-up(lg) {
