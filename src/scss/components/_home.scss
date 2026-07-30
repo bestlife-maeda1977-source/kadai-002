@@ -359,3 +359,15 @@
     }
   }
 }
+
+.container-aside {
+  .social {
+    li {
+      .icon {
+        display: block;
+        width: 29px;
+        height: 29px;
+      }
+    }
+  }
+}
