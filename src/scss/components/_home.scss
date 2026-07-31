@@ -360,13 +360,146 @@
   }
 }
 
-.container-aside {
+.contents-wrapper {
+  grid-template-columns: repeat(1, 68.5% 1fr);
+  gap: 38px;
+
+  .grid-block {
+    &:nth-of-type(1) {
+      border-right: 1px solid $black;
+
+      @include media-breakpoint-up(lg) {
+        padding-right: 38px;
+      }
+    }
+  }
+
   .social {
+    h2 {
+      font-size: 64px;
+      line-height: 1;
+      font-family: "EB Garamond", serif;
+    }
+
+    .explanation {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 2;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 30px;
+    }
+
     li {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+      grid-row: span 2;
+      border-right: 1px solid $black;
+
+      &:first-of-type,
+      &:nth-of-type(3n + 1) {
+        border-left: 1px solid $black;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 15px;
+      }
+
+      p {
+        margin-bottom: 0;
+        text-align: center;
+        font-family: "EB Garamond", serif;
+        font-size: 32px;
+        line-height: 1;
+      }
+
+      div {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+      }
+
       .icon {
         display: block;
         width: 29px;
         height: 29px;
+      }
+
+      span {
+        display: block;
+        font-size: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .online-store {
+    h2 {
+      font-size: 120px;
+      line-height: 1;
+      font-family: "EB Garamond", serif;
+    }
+
+    .explanation {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 2;
+    }
+  }
+
+  .stockist {
+    h2 {
+      font-size: 64px;
+      line-height: 1;
+      font-family: "EB Garamond", serif;
+    }
+
+    .explanation {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 2;
+    }
+  }
+
+  .contact {
+    .block {
+      position: relative;
+    }
+
+    .object {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: $white;
+
+      h2,
+      p {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 64px;
+        line-height: 1;
       }
     }
   }
