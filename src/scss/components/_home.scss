@@ -504,3 +504,20 @@
     }
   }
 }
+
+.border-line {
+  display: inline-block;
+  position: relative;
+  padding-left: 58px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    top: 11px;
+  }
+}
