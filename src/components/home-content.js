@@ -1,0 +1,707 @@
+class HomeContent extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <main>
+        <section id="collection" class="container-xl container-about">
+          <div class="row">
+            <div
+              class="col-12 col-lg-4 gx-0 gx-lg-4 mb-4 mb-lg-0 pb-5 pb-lg-0 details"
+            >
+              <h2 class="font-EBGaramond">ABOUT</h2>
+              <p class="copy font-sans d-inline d-lg-block">
+                伝統で無いものは、すべて盗作である
+              </p>
+              <p class="name font-sans d-inline d-lg-block text-lg-end">
+                ユージェニオ・ドール
+              </p>
+              <p class="detail font-sans mt-4 mt-lg-0 mb-4">
+                ピエール・フルニエが1994年にフランス・パリでANATOMICAをオープンしたのは、当時メンズシーンから失われていた、または失われつつあった伝統的なヨーロッパのファッションを蘇らせるためだった。歴史と伝統、そして自身によるフィット感に拘った「アナトミカル（解剖学的）」なコレクションを展開。その後、2006年の寺本欣児との出会いによってANATOMICAに新たな方向性が加わる。2人のフィルターを通した、日本のものづくりによるアメリカンテイスト・ガーメントの誕生となる。
+              </p>
+              <div class="link">
+                <a href="./" class="font-sans">VIEW MORE</a>
+              </div>
+              <div class="img">
+                <img
+                  src="/src/assets/bg-001.svg"
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  alt=""
+                  width="372"
+                  height="210"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 gx-0 gx-lg-5 collection">
+              <div class="container-fluid gx-0 pb-4 pb-lg-0">
+                <div class="row">
+                  <h3 class="px-lg-4">
+                    2024 SPRING &amp; SUMMER<br />COLLECTION
+                  </h3>
+                </div>
+                <ul class="row">
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-001.jpg"
+                        class="img-fluid"
+                        alt="CIRCUS CHANGING POPLIN"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      <a
+                        href="https://store.35summers.com/products/circus-changing-poplin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >CHANGING POPLIN</a
+                      >
+                    </p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-002.jpg"
+                        class="img-fluid"
+                        alt="UNIVERSITY JACKET I / BD SHIRT / HAND FRINGED TIE / TRIM FIT PANTS I"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      UNIVERSITY JACKET I / <a
+                        href="https://store.35summers.com/products/bd-shirt-ideal-oxford"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >BD SHIRT</a
+                      > / HAND FRINGED TIE / TRIM FIT PANTS I
+                    </p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-003.jpg"
+                        class="img-fluid"
+                        alt="DOCKER JACKET / DOCKER PANTS / 1918 ARMY HAT"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      DOCKER JACKET / DOCKER PANTS / <a
+                        href="https://store.35summers.com/products/1918-army-hat?_pos=1&_sid=b360d7f7c&_ss=r"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >ARMY HAT</a
+                      >
+                    </p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-004.jpg"
+                        class="img-fluid"
+                        alt="1918 PULLOVER / 1918 ARMY HAT"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>1918 PULLOVER / 1918 ARMY HAT</p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-005.jpg"
+                        class="img-fluid"
+                        alt="MEN : BIARRITZ / ROYAL MARINE PANTS II / SATIN SCARF STRIPE & DOT - WOMEN : BIARRITZ / 618 MARILYN I / SATIN SCARF SIX PETAL FLOWER"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      MEN : <a
+                        href="https://store.35summers.com/products/biarritz"
+                        target="_blank"
+                        >BIARRITZ</a
+                      > / ROYAL MARINE PANTS II / SATIN SCARF STRIPE & DOT -
+                      WOMEN : <a
+                        href="https://store.35summers.com/products/biarritz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >BIARRITZ</a
+                      > / <a
+                        href="https://store.35summers.com/products/618-marilyn-1-denim"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >618 MARILYN I</a
+                      >
+                       / SATIN SCARF SIX PETAL FLOWER
+                    </p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-006.jpg"
+                        class="img-fluid"
+                        alt="BIARRITZ / 618 MARILYN I / ALHAMBRA TROTTEUR"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      BIARRITZ / <a
+                        href="https://store.35summers.com/products/618-marilyn-1-denim"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >618 MARILYN I</a
+                      > / <a
+                        href="https://store.35summers.com/products/alhambra-trotteur-calf?_pos=1&_sid=bed518863&_ss=r"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >ALHAMBRA TROTTEUR</a
+                      >
+                    </p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-007.jpg"
+                        class="img-fluid"
+                        alt="MEN : STANLEY JACKET / BAND COLLAR SHIRT / ROYAL MARINE PANTS II - WOMEN : DOLMAN / HENRIETTA"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      MEN : <a
+                        href="https://store.35summers.com/products/stanley-jacket-indigo-gingham-check?_pos=2&_sid=d259b3cb4&_ss=r"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >STANLEY JACKET</a
+                      > / BAND COLLAR SHIRT / ROYAL MARINE PANTS II - WOMEN : <a
+                        href="https://store.35summers.com/products/ladies-dolman-gingham?_pos=1&_sid=918d51f37&_ss=r"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        > DOLMAN</a
+                      > / HENRIETTA
+                    </p>
+                  </li>
+                  <li class="col-4 col-lg-3">
+                    <div class="img">
+                      <img
+                        src="/src/assets/img-collection-008.jpg"
+                        class="img-fluid"
+                        alt="TUNA TUNIE (WAKOUWA) / ROYAL MARINE PANTS II"
+                        width="220"
+                        height="294"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <p>
+                      <a
+                        href="https://store.35summers.com/products/surfco-parka-canvas%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >TUNA TUNIE(WAKOUWA)</a
+                      > / ROYAL MARINE PANTS II
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row hr-adjust d-none d-lg-block">
+              <div class="col pt-4">
+                <hr />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-xxl container-masterpiece pt-3">
+          <header>
+            <h2>MASTERPIECE</h2>
+            <p>
+              “神は細部に宿る” 
+              妥協することなく徹底的にフィッティングを追求し、見えない細部の細部まで拘り抜いて作り上げた、いつまでも廃れることのない不朽の名作たち。ANATOMICAを代表するマスターピースをご紹介します。
+            </p>
+          </header>
+          <div class="grid grid-pc d-none d-lg-grid">
+            <div class="grid-column">
+              <a href="#" class="grid-item grid-item-1"
+                ><img
+                  src="/src/assets/mp-001.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  width="442"
+                  height="563"
+              /></a>
+              <a href="#" class="grid-item grid-item-6"
+                ><img
+                  src="/src/assets/mp-006.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="442"
+                  height="273"
+              /></a>
+            </div>
+            <div class="grid-column grid-column-separate">
+              <div class="grid-column-item">
+                <a href="#" class="grid-item grid-item-2"
+                  ><img
+                    src="/src/assets/mp-002.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="442"
+                    height="337"
+                /></a>
+                <a href="#" class="grid-item grid-item-4"
+                  ><img
+                    src="/src/assets/mp-004.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="442"
+                    height="307"
+                /></a>
+              </div>
+              <div class="grid-column-item">
+                <a href="#" class="grid-item grid-item-3"
+                  ><img
+                    src="/src/assets/mp-003.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    width="377"
+                    height="187"
+                /></a>
+                <a href="#" class="grid-item grid-item-5"
+                  ><img
+                    src="/src/assets/mp-005.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="377"
+                    height="458"
+                /></a>
+                <a href="#" class="grid-item grid-item-8"
+                  ><img
+                    src="/src/assets/mp-008.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                /></a>
+              </div>
+
+              <a href="#" class="grid-item grid-item-7"
+                ><img
+                  src="/src/assets/mp-007.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="827"
+                  height="183"
+              /></a>
+            </div>
+          </div>
+
+          <div class="grid gird-sp d-lg-none">
+            <div class="grid-column">
+              <a href="#" class="grid-item grid-item-1"
+                ><img
+                  src="/src/assets/mp-001.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  width="442"
+                  height="563"
+              /></a>
+              <a href="#" class="grid-item grid-item-2"
+                ><img
+                  src="/src/assets/mp-002.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="442"
+                  height="337"
+              /></a>
+              <a href="#" class="grid-item grid-item-6"
+                ><img
+                  src="/src/assets/mp-006.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="442"
+                  height="273"
+              /></a>
+            </div>
+            <div class="grid-column grid-column-separate">
+              <div class="grid-column-item">
+                <a href="#" class="grid-item grid-item-5"
+                  ><img
+                    src="/src/assets/mp-005.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="377"
+                    height="458"
+                /></a>
+                <a href="#" class="grid-item grid-item-4"
+                  ><img
+                    src="/src/assets/mp-004.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="442"
+                    height="307"
+                /></a>
+              </div>
+              <div class="grid-column-item">
+                <a href="#" class="grid-item grid-item-3"
+                  ><img
+                    src="/src/assets/mp-003.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    width="377"
+                    height="187"
+                /></a>
+                <a href="#" class="grid-item grid-item-8"
+                  ><img
+                    src="/src/assets/mp-008.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                /></a>
+              </div>
+
+              <a href="#" class="grid-item grid-item-7"
+                ><img
+                  src="/src/assets/mp-007.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="827"
+                  height="183"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-xxl container-aside mb-5">
+          <div class="row">
+            <div class="col">
+              <div class="contents-wrapper d-grid">
+                <div class="grid-block">
+                  <aside class="social grid-item">
+                    <h2>BLOG &amp; INSTAGRAM</h2>
+                    <p class="explanation font-sans">
+                      ブランドの最新情報、直営店の取扱商品やスタッフのスタイリング等の情報は、<br />オフィシャルブログや各店舗のインスタグラムをご確認ください。
+                    </p>
+                    <div class="pt-4">
+                      <ul class="d-grid">
+                        <li>
+                          <a
+                            href="https://store.anatomica.jp/blogs/blog"
+                            rel="noopener"
+                            target="_blank"
+                            ><p>OFFICIAL<br />BLOG</p></a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica.jp/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>OFFICIAL</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica.jp</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_tokyo_nihonbashi/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>TOKYO</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_tokyo_nihonbashi</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_tokyo_aoyama/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>AOYAMA</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_tokyo_aoyama</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_newoman_yokohama/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>YOKOHAMA</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_newoman_yokohama</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_nagoya/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>NAGOYA</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_nagoya</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_sapporo/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>SAPPORO</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_sapporo</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_kyoto/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>KYOTO</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_kyoto</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/anatomica_paris_flagship_store/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>PARIS</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@anatomica_paris</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/the_arkeos_club/"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <div>
+                              <p>ARKEOS CLUB</p>
+                              <img
+                                class="icon"
+                                alt="Instagram"
+                                src="/src/assets/logo-instagram.svg"
+                              />
+                            </div>
+                            <span>@the_arkeos_club</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </aside>
+
+                  <aside class="stockist grid-item d-block d-lg-none pb-5">
+                    <h2>STOCKIST</h2>
+                    <p class="explanation">
+                      日本国内・海外の直営店、及びANATOMICAの取り扱い店舗をご案内します。
+                    </p>
+                    <div>
+                      <a href="/stockist">VIEW MORE</a>
+                    </div>
+                    <div>
+                      <img
+                        class="img-fluid"
+                        alt=""
+                        src="/src/assets/img-stockist.webp"
+                      />
+                    </div>
+                  </aside>
+
+                  <aside class="online-store grid-item">
+                    <h2>ONLINE STORE</h2>
+                    <p class="explanation font-sans">
+                      ANATOMICAの公式オンラインショップでは、メンズ・レディース共に定番アイテムから<br />シーズン限定アイテムまで幅広く、アイテム数豊富に取り扱っております。
+                    </p>
+                    <a
+                      href="https://store.anatomica.jp/"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <img
+                        class="img-fluid"
+                        alt="35SUMMERS OFFICIAL STOREを見る"
+                        src="/src/assets/img-online-store.webp"
+                      />
+                    </a>
+                  </aside>
+
+                  <aside class="contact grid-item d-block d-lg-none">
+                    <a
+                      href="https://store.anatomica.jp/pages/contact"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>
+                          <h2>CONTACT</h2>
+                          <p>
+                            ANATOMICAへのお問い合わせにつきましては、<br />CONTACTページよりお願いします。
+                          </p>
+                        </div>
+                        <img
+                          class="img-fluid"
+                          alt=""
+                          src="/src/assets/img-contact.webp"
+                        />
+                      </div>
+                    </a>
+                  </aside>
+                </div>
+                <div class="grid-block d-none d-lg-block">
+                  <aside class="stockist grid-item pb-4">
+                    <h2>STOCKIST</h2>
+                    <p class="explanation font-sans">
+                      日本国内・海外の直営店、及びANATOMICAの取り扱い店舗をご案内します。
+                    </p>
+                    <div class="text-end">
+                      <span class="border-line"><a href="/stockist">VIEW MORE</a></span>
+                    </div>
+                    <div class="pt-4">
+                      <img
+                        class="img-fluid"
+                        alt=""
+                        src="/src/assets/img-stockist.webp"
+                      />
+                    </div>
+                  </aside>
+
+                  <hr class="pb-4" />
+
+                  <aside class="contact grid-item">
+                    <a
+                      href="https://store.anatomica.jp/pages/contact"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <div class="block">
+                        <div class="object">
+                          <div class="adjust text-center">
+                            <h2>CONTACT</h2>
+                            <p class="explanation font-sans">
+                              ANATOMICAへのお問い合わせにつきましては、<br />CONTACTページよりお願いします。
+                            </p>
+                          </div>
+                        </div>
+                        <img
+                          class="img-fluid"
+                          alt=""
+                          src="/src/assets/img-contact.webp"
+                        />
+                      </div>
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    `;
+  }
+}
+customElements.define('home-content', HomeContent);
