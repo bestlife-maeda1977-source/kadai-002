@@ -5,16 +5,18 @@ class GlobalHeader extends HTMLElement {
         <div class="row">
           <div class="col gx-0 gx-xl-4">
             <h1 class="ci container-fluid">
-              <img
-                src="/src/assets/ci.svg"
-                width="260"
-                height="41"
-                loading="lazy"
-                decoding="async"
-                alt="ANATOMICA"
-                class="img-fluid"
-              />
-              <span>Clothing and shoes that fit a wide variety of human bodies</span>
+              <a href="/">
+                <img
+                  src="/src/assets/ci.svg"
+                  width="260"
+                  height="41"
+                  loading="lazy"
+                  decoding="async"
+                  alt="ANATOMICA"
+                  class="img-fluid"
+                />
+                <span>Clothing and shoes that fit a wide variety of human bodies</span>
+              </a>
             </h1>
           </div>
         </div>
