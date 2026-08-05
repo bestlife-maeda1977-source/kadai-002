@@ -1,7 +1,7 @@
 class HomeContent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <main>
+      <main class="home">
         <section id="collection" class="container-xl container-about">
           <div class="row">
             <div
