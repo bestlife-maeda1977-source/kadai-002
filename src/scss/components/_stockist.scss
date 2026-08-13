@@ -1,0 +1,17 @@
+.main-stockist {
+	.container-stockist {
+		h1.font-EBGaramond {
+			font-size: min(calc(88 / 1360 * (100vw - 80px)), 88px);
+		}
+
+		.d-flex {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: stretch;
+		}
+
+    .flex-item {
+      width: 33.33%;
+    }
+	}
+}
